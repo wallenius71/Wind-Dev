@@ -1,0 +1,57 @@
+﻿<Window x:Class="MultiConfigTool_UI.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Multi-Config Processing Tool" Height="300" Width="300"
+    xmlns:local="clr-namespace:MultiConfigTool_UI">
+    
+    <Window.Resources>
+        <ResourceDictionary Source="MainWindowResources.xaml"/>
+       
+    </Window.Resources>
+    
+    <Grid Margin="4">
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="*"/>
+            
+            
+        </Grid.ColumnDefinitions>
+        
+        
+               
+        <Border DataContext="{Binding Path=Workspace}"
+            Grid.Column="1"
+            Style="{StaticResource DefaultBorderStyle}">
+            <DockPanel LastChildFill="True">
+            <Menu HorizontalAlignment="Stretch"   DockPanel.Dock="Top"  >
+               
+                <MenuItem  Header="_File">
+                        
+                            <MenuItem   Header="Load Data from file" HorizontalAlignment="Stretch"  
+                                    Command="{Binding RelativeSource={RelativeSource FindAncestor, 
+                                    AncestorType={x:Type Window}},Path=DataContext.LoadFileCommand}">
+                            
+                        </MenuItem>
+                    
+                </MenuItem>
+                    
+                        <ProgressBar   Background="Transparent" BorderBrush="Transparent" BorderThickness="0"  
+                             VerticalAlignment="Center" HorizontalAlignment="Stretch"  Height="10" Width="3000"
+                                     IsIndeterminate="{Binding RelativeSource={RelativeSource FindAncestor, 
+                                    AncestorType={x:Type Window}},Path=DataContext.FileIsLoading}" 
+                                 Visibility="{Binding RelativeSource={RelativeSource FindAncestor, 
+                                    AncestorType={x:Type Window}},Path=DataContext.FileIsLoading, Converter ={StaticResource VisibilityConverter}}" 
+                                     />
+                    
+
+                </Menu> 
+                
+               
+                        
+                
+            <ContentControl DockPanel.Dock="Top"
+                Content="{Binding}"
+                />
+        </DockPanel>
+         </Border>
+    </Grid>
+</Window>

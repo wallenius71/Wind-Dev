@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="Analysis_UI.ShearGridView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dg="clr-namespace:Microsoft.Windows.Controls;assembly=WPFToolkit"
+    >
+    
+        <DockPanel >
+         
+         <Expander  DockPanel.Dock="Top" Header="Upper Average">
+             <DataGrid ItemsSource="{Binding Path=UpperAvg}"/>
+         </Expander>
+            
+         <Expander DockPanel.Dock="Top" Header="Upper Average Count">
+            <DataGrid ItemsSource="{Binding Path=UpperAvgCount}"/>
+        </Expander>
+            
+        <Expander   DockPanel.Dock="Top" Header="Lower Average">
+            <DataGrid ItemsSource="{Binding Path=LowerAvg}"/>
+        </Expander>
+            
+        <Expander   DockPanel.Dock="Top" Header="Lower Average Count">
+            <DataGrid ItemsSource="{Binding Path=LowerAvgCount}"/>
+        </Expander>
+            
+        <Expander DockPanel.Dock="Top" Header="Alpha">
+            <DataGrid ItemsSource="{Binding Path=Alpha}"/>
+        </Expander>
+        
+        
+    </DockPanel>
+            
+    
+</UserControl>

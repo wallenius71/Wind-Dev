@@ -1,0 +1,51 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TurbineDataUtility.Model" GeneratedClassName="Settings1">
+  <Profiles />
+  <Settings>
+    <Setting Name="SS1" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-6</Value>
+    </Setting>
+    <Setting Name="CC2" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-7</Value>
+    </Setting>
+    <Setting Name="GO2" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-7</Value>
+    </Setting>
+    <Setting Name="EH1" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-8</Value>
+    </Setting>
+    <Setting Name="FR1" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-6</Value>
+    </Setting>
+    <Setting Name="RT1" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-6</Value>
+    </Setting>
+    <Setting Name="SM1" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-6</Value>
+    </Setting>
+    <Setting Name="LOG" Type="System.String" Scope="User">
+      <Value Profile="(Default)">"P:\0_Projects\US\0_Operations\_Monthly RAW pi data\PiDownloadLog.csv"</Value>
+    </Setting>
+    <Setting Name="SM2" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-6</Value>
+    </Setting>
+    <Setting Name="TH1" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-6</Value>
+    </Setting>
+    <Setting Name="FO2" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-5</Value>
+    </Setting>
+    <Setting Name="FO1" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-5</Value>
+    </Setting>
+    <Setting Name="MH1" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-5</Value>
+    </Setting>
+    <Setting Name="FR2" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-6</Value>
+    </Setting>
+    <Setting Name="FO3" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-5</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

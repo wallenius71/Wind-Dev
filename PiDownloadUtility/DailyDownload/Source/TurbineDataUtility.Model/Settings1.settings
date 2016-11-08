@@ -1,0 +1,93 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TurbineDataUtility.Model" GeneratedClassName="Settings1">
+  <Profiles />
+  <Settings>
+    <Setting Name="SS1" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-6</Value>
+    </Setting>
+    <Setting Name="CC2" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-7</Value>
+    </Setting>
+    <Setting Name="GO2" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-7</Value>
+    </Setting>
+    <Setting Name="EH1" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-8</Value>
+    </Setting>
+    <Setting Name="FR1" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-6</Value>
+    </Setting>
+    <Setting Name="RT1" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-6</Value>
+    </Setting>
+    <Setting Name="SM1" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-6</Value>
+    </Setting>
+    <Setting Name="LOG" Type="System.String" Scope="User">
+      <Value Profile="(Default)">"P:\0_Projects\US\0_Operations\_Monthly RAW pi data\PiDownloadLog.csv"</Value>
+    </Setting>
+    <Setting Name="SM2" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-6</Value>
+    </Setting>
+    <Setting Name="TH1" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-6</Value>
+    </Setting>
+    <Setting Name="FO2" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-5</Value>
+    </Setting>
+    <Setting Name="FO1" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-5</Value>
+    </Setting>
+    <Setting Name="MH1" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-5</Value>
+    </Setting>
+    <Setting Name="FR2" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-6</Value>
+    </Setting>
+    <Setting Name="FO3" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-5</Value>
+    </Setting>
+    <Setting Name="SS1_LongName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Silver_Star_I</Value>
+    </Setting>
+    <Setting Name="CC2_LongName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Cedar_Creek_II</Value>
+    </Setting>
+    <Setting Name="GO2_LongName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Goshen</Value>
+    </Setting>
+    <Setting Name="EH1_LongName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Edom_Hill</Value>
+    </Setting>
+    <Setting Name="FR1_LongName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Flat_Ridge_I</Value>
+    </Setting>
+    <Setting Name="RT1_LongName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Titan_I</Value>
+    </Setting>
+    <Setting Name="SM1_LongName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sherbino_Mesa_1</Value>
+    </Setting>
+    <Setting Name="SM2_LongName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sherbino_Mesa_II</Value>
+    </Setting>
+    <Setting Name="FO2_LongName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Fowler_II</Value>
+    </Setting>
+    <Setting Name="FO1_LongName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Fowler_I</Value>
+    </Setting>
+    <Setting Name="MH1_LongName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Mehoopany</Value>
+    </Setting>
+    <Setting Name="FR2_LongName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Flat_Ridge_II</Value>
+    </Setting>
+    <Setting Name="FO3_LongName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Fowler_III</Value>
+    </Setting>
+    <Setting Name="TH1_LongName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Trinity_I</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

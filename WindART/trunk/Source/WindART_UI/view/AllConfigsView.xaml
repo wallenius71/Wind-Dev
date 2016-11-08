@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="WindART_UI.AllConfigsView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    >
+    
+    <UserControl.Resources>
+        <ResourceDictionary Source="WorkspaceResources.xaml"/>
+    </UserControl.Resources>
+    
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions >
+            <RowDefinition Height="Auto"/>
+           
+    </Grid.RowDefinitions>
+        <DockPanel>
+        <Border Style="{StaticResource MainBorderStyle}">
+            
+            <ContentControl 
+                Content="{Binding Path=Configs}"
+                ContentTemplate="{StaticResource AllConfigsTemplate}"/>
+               
+        </Border>
+    </DockPanel>
+    </Grid>
+</UserControl>

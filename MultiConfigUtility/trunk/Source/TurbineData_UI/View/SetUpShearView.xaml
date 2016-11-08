@@ -1,0 +1,9 @@
+﻿<UserControl x:Class="Analysis_UI.SetUpShearView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    >
+    
+        <Button Height="30" DockPanel.Dock="Top"  Content="Run Shear" Command="{Binding RelativeSource={RelativeSource FindAncestor, 
+                    AncestorType={x:Type ContentControl},AncestorLevel=2}, Path=DataContext.RunShearCommand}" />   
+    
+</UserControl>

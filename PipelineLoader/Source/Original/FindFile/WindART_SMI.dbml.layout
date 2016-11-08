@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="WindART_SMI">
+  <DataContextMoniker Name="/WindART_SMIDataContext" />
+  <nestedChildShapes>
+    <classShape Id="5951173c-1f80-493c-add5-22c766ff3dc9" absoluteBounds="3.25, 1, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/WindART_SMIDataContext/Log" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5fb54bf0-c818-4f61-9d42-4d698d3b0cd7" absoluteBounds="3.2650000000000006, 1.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a7650c61-692a-4f46-956b-a3e08009b880" absoluteBounds="0.875, 0.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/WindART_SMIDataContext/ProcessFile" />
+      <nestedChildShapes>
+        <elementListCompartment Id="698097e5-5d72-40bc-b0a1-c2e044e0f72c" absoluteBounds="0.89000000000000012, 1.21, 1.9700000000000002, 1.7878011067708333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="25f5952c-c95f-4302-8a6d-7023e82e4b82" absoluteBounds="5.625, 1, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/WindART_SMIDataContext/FileLocation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a77ccbb2-5239-4fd2-9537-83351a862a38" absoluteBounds="5.6400000000000006, 1.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="WindART_SMI" Class="WindART_SMIDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=C:\devsvn\WindART\trunk\Database\WindART_SMI.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True" SettingsObjectName="UFLLoader.Properties.Settings" SettingsPropertyName="WindART_SMIConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ProcessFile" Member="ProcessFiles">
+    <Type Name="ProcessFile">
+      <Column Name="ProcessFileId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ProcessDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="OriginalName" Type="System.String" DbType="VarChar(8000)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(8000)" CanBeNull="true" />
+      <Column Name="FileStatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FileLocationId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FileFormatId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SiteId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Encrypted" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="Encoding" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

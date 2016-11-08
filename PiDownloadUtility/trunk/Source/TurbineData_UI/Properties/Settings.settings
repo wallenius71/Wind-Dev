@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Analysis_UI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="LOG" Type="System.String" Scope="User">
+      <Value Profile="(Default)">@"P:\0_Projects\US\0_Operations\_Monthly RAW pi data\PiDownloadLog.csv"</Value>
+    </Setting>
+    <Setting Name="SourceFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\BP1\public\0_Projects\US\0_Operations\_Monthly RAW pi data\Source Tag Lists\SourceTags.xlsx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

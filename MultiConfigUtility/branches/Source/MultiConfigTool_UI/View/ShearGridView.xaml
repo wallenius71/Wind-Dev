@@ -1,0 +1,88 @@
+﻿<UserControl x:Class="MultiConfigTool_UI.ShearGridView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:MultiConfigTool_UI"
+    xmlns:dg="clr-namespace:Microsoft.Windows.Controls;assembly=WPFToolkit"
+     xmlns:sys="clr-namespace:System;assembly=mscorlib"
+     x:Name="UC"
+
+    BorderBrush="Transparent" >
+    
+    <UserControl.Resources >
+        <local:RowHeaderConverter x:Key="RowHeaderConverter"/>
+        <local:DecimalConverter x:Key="DecimalConverter"/>
+        
+        <Style TargetType="DataGrid">
+            <Setter Property="CanUserAddRows" Value="False"/>
+            
+         </Style>
+
+        <DataTemplate  DataType="{x:Type DataGridCell}" x:Key="DecimalConvert">
+            <TextBlock  Padding="1" Text="{Binding Converter={StaticResource DecimalConverter}}"  />
+        </DataTemplate >
+
+        <Style TargetType="{x:Type DataGridRowHeader}">
+            <Setter>
+                <Setter.Property>
+                    Content
+                </Setter.Property>
+                <Setter.Value>
+                    <MultiBinding Converter="{StaticResource RowHeaderConverter}">
+                        <Binding RelativeSource="{RelativeSource FindAncestor,AncestorType={x:Type ContentControl}}"
+                                             Path="DataContext"/>
+                        <Binding />
+                    </MultiBinding>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
+    </UserControl.Resources>
+        <DockPanel >
+         
+         <Expander  DockPanel.Dock="Top" Header="Upper Average">
+
+
+            <DataGrid   AutoGeneratingColumn="dg1_AutoGeneratingColumn" Name="dg1"  
+                        ItemsSource="{Binding Path=UpperAvg}" ItemStringFormat="F3"
+                        >
+                
+                 
+                
+                
+            </DataGrid>
+
+
+        </Expander>
+            
+         <Expander DockPanel.Dock="Top" Header="Upper Average Count">
+            <DataGrid AutoGeneratingColumn="dg1_AutoGeneratingColumn" ItemsSource="{Binding Path=UpperAvgCount}">
+                
+            </DataGrid>
+        </Expander>
+            
+        <Expander   DockPanel.Dock="Top" Header="Lower Average">
+            <DataGrid  AutoGeneratingColumn="dg1_AutoGeneratingColumn" ItemsSource="{Binding Path=LowerAvg}">
+                
+            </DataGrid>
+        </Expander>
+            
+        <Expander   DockPanel.Dock="Top" Header="Lower Average Count">
+            <DataGrid AutoGeneratingColumn="dg1_AutoGeneratingColumn" ItemsSource="{Binding Path=LowerAvgCount}">
+                
+            </DataGrid>
+        </Expander>
+            
+        <Expander DockPanel.Dock="Top" Header="Alpha">
+            <StackPanel Orientation="Horizontal" >
+
+                <DataGrid  AutoGeneratingColumn="dg1_AutoGeneratingColumn" ItemsSource="{Binding Path=Alpha}">
+                    
+                </DataGrid>
+            </StackPanel>
+        </Expander>
+        
+        
+    </DockPanel>
+            
+    
+</UserControl>

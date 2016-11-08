@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="WindART_SMI">
+  <DataContextMoniker Name="/WindART_SMIDataContext" />
+  <nestedChildShapes>
+    <classShape Id="826a9b7f-a6d9-4df1-b5c4-dfdb649cee8a" absoluteBounds="0.5, 0.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/WindART_SMIDataContext/FileLocation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e3a08b00-6a22-4a14-aae5-e0da839dc4c2" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5bdec1f2-52dc-4693-83cd-5d4e85b7fb65" absoluteBounds="3.625, 0.5, 2, 1.9631982421874996">
+      <DataClassMoniker Name="/WindART_SMIDataContext/FileFormat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bda28146-74eb-4f7b-af06-51ac29d35607" absoluteBounds="3.6400000000000006, 0.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.625 : 1.38544840494792); (2.5 : 1.38544840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/WindART_SMIDataContext/FileFormat/FileFormat_FileLocation" />
+      <nodes>
+        <classShapeMoniker Id="5bdec1f2-52dc-4693-83cd-5d4e85b7fb65" />
+        <classShapeMoniker Id="826a9b7f-a6d9-4df1-b5c4-dfdb649cee8a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="27b1ae35-4da9-4e43-8486-97fe8edf61bf" absoluteBounds="6.625, 0.75, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/WindART_SMIDataContext/FileFormatType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aa311f21-b800-45d3-b664-8a5050db14ce" absoluteBounds="6.6400000000000006, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.625 : 1.44314697265625); (5.625 : 1.44314697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/WindART_SMIDataContext/FileFormatType/FileFormatType_FileFormat" />
+      <nodes>
+        <classShapeMoniker Id="27b1ae35-4da9-4e43-8486-97fe8edf61bf" />
+        <classShapeMoniker Id="5bdec1f2-52dc-4693-83cd-5d4e85b7fb65" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="0ce59b21-62b0-4519-885f-fbb4745a5339" absoluteBounds="0.75, 3, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/WindART_SMIDataContext/Log" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1e25aa47-738f-4289-9139-81b57016c150" absoluteBounds="0.76500000000000012, 3.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0bcb20dc-7ba5-481a-aec7-ff959f928a43" absoluteBounds="3.625, 3, 2, 2.3478011067708326">
+      <DataClassMoniker Name="/WindART_SMIDataContext/ProcessFile" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0bf3a09f-c64d-4b07-a328-4b77267322aa" absoluteBounds="3.6399999999999997, 3.46, 1.9700000000000002, 1.7878011067708333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

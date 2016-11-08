@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="Analysis_UI.ViewPIData"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    
+    >
+    <UserControl.Resources> 
+        <ResourceDictionary Source="ViewResources.xaml"/>
+    </UserControl.Resources>
+    <ContentControl 
+        Content="{Binding Path=Data,UpdateSourceTrigger=PropertyChanged}"
+        ContentTemplate="{StaticResource TableTemplate}">
+       </ContentControl> 
+</UserControl>

@@ -1,0 +1,42 @@
+﻿<Window x:Class="Analysis_UI.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="PI Data Download Utility" Height="300" Width="300">
+    
+    <Window.Resources>
+        <ResourceDictionary Source="MainWindowResources.xaml"/>
+    </Window.Resources>
+    
+    <Grid Margin="4">
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="*"/>
+            
+        </Grid.ColumnDefinitions>
+        
+        
+               
+        <Border DataContext="{Binding Path=Workspace}"
+            Grid.Column="1"
+            Style="{StaticResource DefaultBorderStyle}">
+            <DockPanel >
+            <Menu  DockPanel.Dock="Top">
+                <StackPanel >
+                        <ProgressBar  Height="20" Width="100" IsIndeterminate="{Binding RelativeSource={RelativeSource FindAncestor, 
+                                    AncestorType={x:Type Window}},Path=DataContext.FileIsLoading}" />
+                        </StackPanel>
+                <MenuItem Header="_File">
+                        
+                            <MenuItem   Header="Load Data from file" HorizontalAlignment="Stretch"  
+                                    Command="{Binding RelativeSource={RelativeSource FindAncestor, 
+                                    AncestorType={x:Type Window}},Path=DataContext.LoadFileCommand}">
+                            
+                        </MenuItem>
+                </MenuItem>
+            </Menu>
+            <ContentControl DockPanel.Dock="Top"
+                Content="{Binding}"
+                />
+        </DockPanel>
+         </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="WindART_SMI">
+  <DataContextMoniker Name="/WindART_SMIDataContext" />
+  <nestedChildShapes>
+    <classShape Id="28f8b125-43af-477e-b242-f959e4f51836" absoluteBounds="1.125, 2.125, 2, 2.4109318033854166">
+      <DataClassMoniker Name="/WindART_SMIDataContext/ProcessFile" />
+      <nestedChildShapes>
+        <elementListCompartment Id="547f8fd4-bece-4be6-b3e2-0cae41e275a5" absoluteBounds="1.1400000000000001, 2.585, 1.9700000000000002, 1.8509318033854165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

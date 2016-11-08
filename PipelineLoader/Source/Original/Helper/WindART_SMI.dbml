@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="WindART_SMI" Class="WindART_SMIDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=10.254.13.3;Initial Catalog=WindART_SMI;Persist Security Info=True;User ID=windart_jesserichards" SettingsObjectName="Helper.Properties.Settings" SettingsPropertyName="WindART_SMIConnectionString2" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.FileLocation" Member="FileLocations">
+    <Type Name="FileLocation">
+      <Column Name="FileLocationId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Folder" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="FileMask" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Recurse" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FileFormatId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="FileFormat_FileLocation" Member="FileFormat" ThisKey="FileFormatId" OtherKey="FileFormatId" Type="FileFormat" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FileFormat" Member="FileFormats">
+    <Type Name="FileFormat">
+      <Column Name="FileFormatId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FileFormatTypeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HeaderRowNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HeaderRowContents" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="TagPrefix" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="TimeZoneId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="FileFormat_FileLocation" Member="FileLocations" ThisKey="FileFormatId" OtherKey="FileFormatId" Type="FileLocation" />
+      <Association Name="FileFormatType_FileFormat" Member="FileFormatType" ThisKey="FileFormatTypeId" OtherKey="FileFormatTypeId" Type="FileFormatType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FileFormatType" Member="FileFormatTypes">
+    <Type Name="FileFormatType">
+      <Column Name="FileFormatTypeId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Delimitor" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Association Name="FileFormatType_FileFormat" Member="FileFormats" ThisKey="FileFormatTypeId" OtherKey="FileFormatTypeId" Type="FileFormat" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Log]" Member="Logs">
+    <Type Name="Log">
+      <Column Name="LogId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LogSeverityId" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="Process" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Message" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProcessFile" Member="ProcessFiles">
+    <Type Name="ProcessFile">
+      <Column Name="ProcessFileId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ProcessDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="OriginalName" Type="System.String" DbType="VarChar(8000)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(8000)" CanBeNull="true" />
+      <Column Name="FileStatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FileLocationId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FileFormatId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SiteId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

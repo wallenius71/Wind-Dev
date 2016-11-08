@@ -1,0 +1,47 @@
+﻿<Window x:Class="DataReloadUtility.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:DataReloadUtility"
+    Title="Data Load Log" 
+        Background="Green"
+        Height="Auto"
+        Width="Auto">
+   
+    
+    <Window.Resources>
+        <Style TargetType="{x:Type Border}"> 
+            <Setter Property="Margin" Value="3"/> 
+            <Setter Property="CornerRadius" Value="4"/> 
+            <Setter Property="Background" Value="MidnightBlue"/>
+            <Setter Property="BorderBrush" Value="Black" />
+        </Style>
+     </Window.Resources>
+    
+    <Grid >
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+            
+            <ListBox  ItemsSource="{Binding Path= LogVM.LogList, UpdateSourceTrigger=PropertyChanged}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel  Orientation="Horizontal">
+                        <TextBlock Margin="5,1,10,1" Text="{Binding Path=Date}" />
+                        <TextBlock Margin="5,1,60,1" Text="{Binding Process}" />
+                        <TextBlock Margin="5,1,10,1" Text="{Binding Message}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+           
+           <StackPanel Margin="5" Grid.Row="1" HorizontalAlignment="Center" >
+                <Button  Content="Start Log" Command="{Binding Path=StartLogCommand}"/>
+           </StackPanel>
+        
+     </Grid>
+    
+</Window>
