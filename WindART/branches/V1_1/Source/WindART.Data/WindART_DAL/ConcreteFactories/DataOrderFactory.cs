@@ -86,6 +86,10 @@ namespace WindART.DAL
                     dataorder = new PiDBDataOrder(_dataType);
                     break;
 
+                    case DataSourceType.Flat_Ridge_1:
+                    dataorder = new PiDBDataOrder(_dataType);
+                    break;
+
                     case DataSourceType.Fowler_01 :
                     dataorder = new PiDBDataOrder(_dataType);
                     break;
@@ -105,6 +109,19 @@ namespace WindART.DAL
                     case DataSourceType.Sherbino_Mesa_2:
                     dataorder = new PiDBDataOrder(_dataType);
                     break;
+
+                    case DataSourceType.Goshen:
+                    dataorder = new PiDBDataOrder(_dataType);
+                    break;
+
+                    case DataSourceType.Mehoopany:
+                    dataorder = new PiDBDataOrder(_dataType);
+                    break;
+
+                    case DataSourceType.Sherbino_Mesa_1:
+                    dataorder = new PiDBDataOrder(_dataType);
+                    break;
+
                 }
                 
                 return dataorder;

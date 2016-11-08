@@ -24,11 +24,16 @@ namespace WindART.DAL
             Cedar_Creek,
             Edom_Hills,
             Flat_Ridge,
+            Flat_Ridge_1,
             Fowler_01,
+            Fowler_02,
+            Goshen,
             Silver_Star,
             Titan,
             Trinity,
             Sherbino_Mesa_2,
+            Sherbino_Mesa_1,
+            Mehoopany,
             NotSet
         }
 

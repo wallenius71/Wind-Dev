@@ -19,7 +19,7 @@ namespace WindART.DAL
         [Test]
         public void TestConnection()
         {
-            _dataOrderFactory = new DataOrderFactory(@"10.96.3.138",DataSourceType.OSIPI);
+            _dataOrderFactory = new DataOrderFactory(@"10.96.13.172",DataSourceType.OSIPI);
             _dataorder = _dataOrderFactory.getDataOrder();
             Assert.IsInstanceOf<PiDBDataOrder>(_dataorder);
         }
