@@ -1,8 +1,0 @@
-﻿<UserControl x:Class="WindART_UI.SetUpShearView"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    >
-    <Grid>
-        <TextBlock Text="Set Up Shear" FontSize="20"/>    
-    </Grid>
-</UserControl>
