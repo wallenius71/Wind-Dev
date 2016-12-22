@@ -19,7 +19,7 @@ namespace TurbineDataUtility.Model
         static List<Tag> _tags = new List<Tag>();
         static IDataRepository repository ;
         
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public static void setup()
         {
             repository=new DataRepository(_tagfile, DataSourceType.XL2007);

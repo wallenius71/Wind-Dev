@@ -36,9 +36,7 @@
         <local1:DataInventoryView/>
     </DataTemplate>
         
-    <DataTemplate x:Key="TagTemplate" DataType="{x:Type tdu:TagGroup}">
-        <local1:TimeSeriesView />
-    </DataTemplate>
+    
 
     <DataTemplate x:Key="SetUpShearPage1">
         <local1:SetUpShearView HorizontalAlignment="Center"/>
