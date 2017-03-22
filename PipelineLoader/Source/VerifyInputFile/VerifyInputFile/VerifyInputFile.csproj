@@ -123,7 +123,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="VerifyInputFile_TemporaryKey.pfx" />
     <None Include="WindART_SMI.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>WindART_SMI.designer.cs</LastGenOutput>

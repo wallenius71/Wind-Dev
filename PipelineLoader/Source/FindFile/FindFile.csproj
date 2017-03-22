@@ -61,7 +61,8 @@
     <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>sept2012.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
@@ -135,7 +136,6 @@
       <Generator>PublicSettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="sept2012.pfx" />
     <None Include="WindART_SMI.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>WindART_SMI.designer.cs</LastGenOutput>
